@@ -1,0 +1,44 @@
+@media (max-width: 600px){
+  .products{
+    display: inherit;
+    height: auto;
+  }
+
+  .product{
+    margin-top: auto;
+  }
+
+  .main_section {
+    padding: 4%
+  }
+
+  .beneficios, .mentions{
+    display: inherit;
+  }
+
+/* ------------- products sheet */
+  .container{
+    display: inherit;
+    height: auto;
+    padding: 4%;
+    font-size: 1.5em;
+  
+  }
+
+  .container .title_product{
+    padding-bottom: 0;
+  }
+
+  .imagen_pdc img{
+    width: 60%;
+  }
+
+  .container .modulo_producto{
+    margin-bottom: 5%
+  }
+
+  .modulo_pago_images img{
+    width: 50%
+  }  
+
+}
