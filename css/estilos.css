@@ -1,31 +1,47 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500');
 /* ------------------------- Variables */
 
 :root{
 /*------ Colores */
---green-color: #7ACC2D;
+  font-family: 'Orbitron', sans-serif;
+--green-color: #0B013C;
 --white-color: white;
---black-color: #313337;
+--black-color: #ffffff;
 --box: 0 0 2px 1px #e6e5e9;
 }
 /* -------------------------------------------  */
 html, body{
   margin:0;
   padding: 0;
-  font-size: 12px;
+  font-size: .9em;
   font-family: 'Comfortaa';
   color: var(--black-color);
+  background: var(--green-color)
 }
 
+h2.galaxy {
+  color: var(--white-color);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .3em;
+  display: flex;
+  align-items: center;
+}
 label{
   padding-bottom: 5px
 }
 
+.galaxy img{
+  width: 3%;
+  transform: rotate(35deg);
+  padding-right: .8em;
+}
 nav{
   display: flex;
   justify-content: space-between;
-  background-color: var(--green-color);
+  background-color: #10044a;
   align-items: center;
   /* width: 100%; */
   padding: 0 10px;
@@ -33,12 +49,16 @@ nav{
 }
 
 nav a{
+  padding: 10px;
+  border: 2px solid transparent;
+  font-size: 14px;
   text-decoration: none;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 nav a:hover{
-  color: var(--white-color);
+  border: solid 2px #221B6B;
+  border-radius: 8px;
 }
 
 nav ul {
@@ -50,17 +70,12 @@ nav li{
   list-style: none;
 }
 
-nav li a:hover{
-  color:var(--white-color);
-}
-
 /* ------------------------------------------- MAIN SECTION */
 
 .main_section{
   padding: 10%;
   padding-bottom: 3%;
   text-align: center;
-  /* animation: appear 3s backwards; */
 }
 
 /* -------------------------------------------  PRODUCTOS */
@@ -79,22 +94,51 @@ nav li a:hover{
 
 .product{
   padding: 10px;
-  /* margin-top: -60px; */
 }
 
 .content{
-  background: var(--white-color);
+  background: var(--green-color);
   padding: 15px;
   border-radius: 5px;
   box-shadow: var(--box);
 }
 
 .image-product{
+  display: inline;
+}
+.image-product{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 1px red;
+  margin: 35px;
+  font-size: 100px;
+  background: black;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.image-product:hover{
+  opacity: 1;
+  /* filter: blur(40px); */
+}
+
+.image-product i{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
   text-align: center;
+  z-index: 3;
 }
 
 .main_btn{
-  background-color: var(--green-color);
+  background-color: #D2666A;
   width: 100%;
   padding: 10px;
   border: 0px;
@@ -105,10 +149,10 @@ nav li a:hover{
 }
 
 .main_btn:hover{
-  background-color: #63a426;
+  background-color: #1B1C67;
 }
 
-/* Beneficios */
+/*----------------------------------- Beneficios */
 .beneficios{
   padding: 5% 5%;
   display: flex;
@@ -138,7 +182,7 @@ hr{
   padding: 25px; 
 }
 
-/* Mentions */
+/*--------------------------------- Mentions */
 .mentions{
   display: flex;
   align-items: center;
@@ -223,7 +267,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--black-color);
+  background: #0C0654;
   padding: 20px;
   color: var(--white-color);
   text-decoration-line: none;
