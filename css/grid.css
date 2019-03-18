@@ -1,6 +1,6 @@
 /* -----------------container */
 .container {
-    width: 90%;
+    /* width: 90%; */
     max-width: 1000px;
     /* padding: 2.9%;; */
     padding: 10% 0 10%;;
@@ -11,10 +11,6 @@
     grid-template-rows: 20px 60px auto 60px auto 60px auto;
     grid-gap: 20px;
 }
-
-/* .container > div{
-    border: solid 1px greenyellow;
-} */
 
 /* --------------------------------grid */
 
@@ -50,6 +46,11 @@
     align-self: center;
 }
 
+/* ----------------------MOON */
+.moon .modulo_pago{
+    grid-area: 2 / 6 / span 5 / span 5; 
+}
+
 /* --------------------------------Sales */
 
 .container .modulo_producto{
@@ -63,6 +64,7 @@
 .container .modulo_pago{
     grid-area: 2 / 6 / span 5 / span 5; 
 }
+
 
 .modulo_pago_images{
    text-align: center;

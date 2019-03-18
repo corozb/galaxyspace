@@ -6,7 +6,7 @@
 :root{
 /*------ Colores */
   font-family: 'Orbitron', sans-serif;
---green-color: #0B013C;
+--blue-color: #0B013C;
 --white-color: white;
 --black-color:black;
 --box: 0 0 2px 1px #e6e5e9;
@@ -19,7 +19,7 @@ html, body{
   font-size: .9em;
   font-family: 'Comfortaa';
   color: var(--white-color);
-  background: var(--green-color)
+  background: var(--blue-color)
 }
 
 h2.galaxy {
@@ -58,8 +58,19 @@ nav a{
   color: var(--white-color);
 }
 
+a.home{
+  font-size:13px;
+  margin: -10px;
+  border: 0px solid transparent;
+  /* padding-left: 3px; */
+}
+
+a.home:hover{
+  border: 0px solid transparent;
+}
+
 nav a:hover{
-  border: solid 2px #221B6B;
+  border: solid 2px #221B6B; 
   border-radius: 8px;
 }
 
@@ -72,6 +83,9 @@ nav li{
   list-style: none;
 }
 
+nav a .galaxy{
+  padding: 0;
+}
 /* ------------------------------------------- MAIN SECTION */
 h1.main_section{
   color:var(--white-color);
@@ -102,7 +116,7 @@ h1.main_section{
 }
 
 .content{
-  /* background: var(--green-color); */
+  /* background: var(--blue-color); */
   padding: 15px;
   border-radius: 5px;
   box-shadow: var(--box);
@@ -121,37 +135,6 @@ h1.main_section{
 .image-product:hover{
   animation: pulse 1s;
 }
-
-/* 
-.image-product{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: solid 1px red;
-  margin: 35px;
-  font-size: 100px;
-  background: black;
-  filter: blur(20px);
-  opacity: 0;
-  transition: 1s;
-} */
-
-/* .image-product:hover{
-  opacity: 1;
-} */
-
-/* .image-product i{
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  text-align: center;
-  z-index: 3;
-} */
 
 .main_btn{
   background-color: #D2666A;
@@ -217,7 +200,7 @@ h2.mention_title{
   text-align: center;
   font-size: 26px;
   padding-top: 90px;
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 
 .content_mention{
@@ -229,19 +212,29 @@ h2.mention_title{
 }
 
 /* ------------------------------------------- Sales */
+
+.container {
+  background-image: url(../images/marsb.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 5% 11% 12% 15%;
+}
 .modulo_pago, .modulo_producto{
-  /* background: var(--white-color); */
+  background: rgba(0, 0, 0, .4);
   box-shadow: var(--box);
   padding: 10px;
 }
 
 .modulo_pago {
+  background: rgba(0, 0, 0, .4);
   padding: 20px;
+  padding-top: 46px
 }
 
 .modulo_pago_images img{
   width: 70%
 } 
+
 
 .data{
   margin-top: 16px;
@@ -258,12 +251,78 @@ h2.mention_title{
   margin-top: 10px
 }
 
-/* ------------------------------------------- Sales */
+.pay {
+  text-align: center;
+}
+
+.btn_pay{
+  background: var(--black-color);
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: 0.8s;
+}
+
+.pay p{
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sucess:hover{
+  background: greenyellow;
+}
+
+.fail:hover{
+  background: red
+}
+/* ----------------------------------------HEADER MARS */
+.mars {
+  background: var(--black-color)
+}
+
+.marsf {
+  background: rgb(15, 15, 15)
+}
+
+/* ---------------------------------------MOON */
+.moon {
+  background-image: url(../images/mb.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding: 5% 11% 12% 15%;
+}
+/* ------------------------------------------- FQRS */
 .fqrs{
   padding: 5% 20%
 }
 
-/* ------------------------------------------- Footer */
+/* ------------------------------------------- REC0MENDATIONS */
+.recomendations{
+  background: #f5f5f5;
+  padding: 5% 15%;
+  color: black;
+  text-align: center;
+}
+
+.recomendations p{
+  font-size: 16px;
+  text-align: justify
+}
+
+.recomendations a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px
+}
+
+
+/* ------------------------------------------- CONDITIONS */
 .conditions{
   padding: 5% 15%
 }
@@ -273,7 +332,7 @@ h2.mention_title{
   text-align: justify
 }
 
-/* ------------------------------------------- Footer */
+/* ------------------------------------------- FOOTER */
 footer{
   display: flex;
   justify-content: space-between;
